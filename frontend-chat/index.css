@@ -1,0 +1,77 @@
+html,body{
+    background-color: #09090F;
+}
+
+*{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 1.1rem;
+}
+
+#form-box{
+    width: 1240px;
+    height: 740px;
+    margin: auto;
+    background-color: #575769;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #fffffa;
+    padding: 10px;
+    overflow-y: scroll;
+
+
+}
+
+.display{
+    padding-bottom: 100px;
+}
+.display div{
+  color: #09090F;
+  width: auto;
+  max-width: 400px;
+  min-height: 30px;
+  border-radius: 5px;
+  background-color: #fffffa;
+  margin: 10px;
+  padding: 15px;
+  font-size: 1em;
+  word-wrap: break-word;
+  
+  
+}
+
+#Div-sus{
+    color: #09090F;
+    width: auto;
+    max-width: 400px;
+    min-height: 30px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #fffffa;
+    margin: 10px;
+    padding: 5px;
+    font-size: 1em;
+    word-wrap: break-word;
+    margin-left: 800px;
+
+}
+
+
+input{
+
+    margin: auto;
+    border-radius: 5px;
+    width: 1100px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 550px;
+
+
+
+    position: fixed;
+
+    top: 89%;
+
+    margin-top: -2.5em;
+    
+    
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
+   <title>Document</title>
+</head>
+<body>
+    
+     
+<div id="form-box">
+    <div id="Div-sus">
+        <h1> <b>Dunha:</b> </h1>
+        Esse Azul ta sus ein...</div>
+    <div class="display">
+    </div>
+    
+    <form>
+        <input name="msg">
+    </form>
+
+</div>
+
+
+    <script>
+        const display = document.querySelector(".display")
+        const form = document.querySelector("form")
+
+        var ws = new WebSocket('ws://127.0.0.1:8080')
+
+        ws.addEventListener("message", ev => {
+            const data = document.createElement("div")
+            data.innerHTML = ev.data
+            display.append(data)
+        })
+
+
+        form.addEventListener("submit", ev => {
+            ev.preventDefault()
+            ws.send(form.msg.value)
+            form.msg.value = ""
+        })
+
+    </script>
+</body>
+</html>
